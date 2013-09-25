@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="/css/syntax.css">
         <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css">
 
+        <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
         <script type="text/javascript" src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 
         <style type="text/css" media="screen">
@@ -19,7 +20,7 @@
 
 
     </head>
-    <body>
+    <body class="hidden">
 
         <div id="main-container" class="container">
           <header class="row">
@@ -54,6 +55,10 @@
             vv: ["{\\bf $1}", 1]
           }
         }
+      });
+      MathJax.Hub.Queue(function() {
+          // only show the body when the math is done rendering
+          $('body').show();
       });
     </script>
 </html>
