@@ -14,8 +14,44 @@
 
 
         <style type="text/css" media="screen">
+          #site-title {
+            font-weight: bold;
+            font-size: 36px;
+          }
+
+          .color-one {
+            color: #00A155;
+          }
+
+          .color-one-dark {
+            color: #006837;
+          }
+
+          .color-mute {
+            color: #CCC;
+          }
+
           #main-container {
             max-width: 650px;
+          }
+
+          footer {
+            border-top: 2px solid #CCC;
+          }
+
+          small {
+            font-size: 12px;
+          }
+
+          #post p {
+            font-size: 16px;
+            line-height: 22px;
+            color: #555;
+          }
+
+          #post-title {
+            font-size: 22px;
+            color: #222;
           }
         </style>
 
@@ -26,8 +62,16 @@
         <div id="main-container" class="container">
           <header class="row">
             <div class="col-sm-12">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/"><span class="glyphicon glyphicon-home"><span></a>
+              <a href="/">
+                <h1 id="site-title">
+                  <span class="brand-color-one-dark">F</span>
+                  <span class="brand-color-one">ascinating </span>
+                  <span class="brand-color-one-dark">Photons</span>
+                </h1>
+              </a>
+              <h2 class="color-mute">
+                Articles about lenses, cameras, lasers, fibers, and photons.
+              </h2>
             </div>
           </header>
 
@@ -39,9 +83,7 @@
 
           <footer class="row">
             <div class="col-sm-12">
-              <p><strong>J. David Giese</strong></p>
-              <p>Scientist, Engineer, Programmer, Entrepreneur.<p/>
-              <p>johndgiese@gmail.com</p>
+              <small class="color-mute"><a class="color-mute" href="mailto:johndgiese@gmail.com">J. David Giese</a> -- Scientist, Engineer, Programmer, Entrepreneur.</small>
             </div>
           </footer>
 
